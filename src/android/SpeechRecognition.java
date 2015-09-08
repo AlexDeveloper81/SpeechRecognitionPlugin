@@ -69,7 +69,6 @@ public class SpeechRecognition extends CordovaPlugin {
 
             final Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);        
             intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-            intent.putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true);
             intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE,"voice.recognition.test");
             intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,lang);
 
